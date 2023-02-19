@@ -1,0 +1,11 @@
+{
+  "name": "to-do-list-websocket-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pSakowski/to-do-list-websocket-node.git",
+  "author": "Piotr Sakowski <p.sakowski1213@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
