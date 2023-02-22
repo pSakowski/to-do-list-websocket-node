@@ -1,5 +1,15 @@
+import React, { useState, useEffect } from 'react';
+import io from 'socket.io-client';
 
 function App() {
+  const [socket, setSocket] = useState(null);
+
+  useEffect(() => {
+    const newSocket = io('http://localhost:8000');
+    setSocket(newSocket);
+
+    return () => newSocket.close();
+  }, []);
 
   return (
     <div className="App">
@@ -17,7 +27,7 @@ function App() {
         </ul>
   
         <form id="add-task-form">
-          <input className="text-input" autocomplete="off" type="text" placeholder="Type your description" id="task-name" />
+          <input className="text-input" autoComplete="off" type="text" placeholder="Type your description" id="task-name" />
           <button className="btn" type="submit">Add</button>
         </form>
   
