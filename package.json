@@ -6,7 +6,8 @@
   "author": "Piotr Sakowski <p.sakowski1213@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "socket.io": "^4.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
